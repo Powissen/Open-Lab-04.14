@@ -14,11 +14,7 @@ namespace Open_Lab_04._14
 
             foreach (string word in strings)
             {
-                int wordLenght = word.Length;
-
-                int SpaceChar = longest - word.Length; 
-                string space = new String(' ', SpaceChar);
-
+                string space = new String(' ', longest - word.Length);
                 Console.WriteLine("* " + word + space + " *");
             }
             Console.WriteLine(stars);
